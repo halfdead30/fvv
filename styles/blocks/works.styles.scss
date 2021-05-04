@@ -1,0 +1,28 @@
+.works {
+  .swiper {
+    &-wrapper {
+      padding-bottom: 80px;
+    }
+    &-button {
+      &-prev,
+      &-next {
+        top: 95%;
+        transform: translateX(-46%);
+      }
+
+      &-prev {
+        left: 46%;
+        @media (max-width: 767px) {
+          left: 37%;
+        }
+      }
+
+      &-next {
+        right: 45%;
+        @media (max-width: 767px) {
+          right: 35%;
+        }
+      }
+    }
+  }
+}

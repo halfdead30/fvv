@@ -1,0 +1,70 @@
+.header {
+  &-menu {
+    display: flex;
+    order: 1;
+    margin-left: auto;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: #000;
+      z-index: 99;
+      width: 86%;
+      padding: 54px 20px;
+      transform: translateX(100%);
+      transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    &[open] {
+      transform: translateX(0%);
+      color: #fff;
+    }
+
+    &.modify {
+      .header-menu__anchor {
+        &:hover {
+          &::before {
+            background-color: #000;
+          }
+        }
+      }
+
+      & + .header-logo {
+        #first,
+        #second,
+        #fourth {
+          fill: #000 !important;
+        }
+        #third {
+          stroke: #000 !important;
+        }
+      }
+
+      & ~ .header-container {
+        .header-info {
+          &__phone {
+            &:hover {
+              &::before {
+                background-color: #000;
+              }
+            }
+          }
+        }
+
+        .toggle {
+          .bar {
+            background-color: #000;
+          }
+          &[open] {
+            .bar {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

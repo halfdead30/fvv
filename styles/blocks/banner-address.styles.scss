@@ -1,0 +1,16 @@
+.header {
+  &-menu {
+    .banner-address {
+      display: none;
+      @media (max-width: 768px) {
+        position: absolute;
+        bottom: 30px;
+        display: block;
+      }
+    }
+  }
+}
+
+.banner-address {
+  margin-top: 16px;
+}

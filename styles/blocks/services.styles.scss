@@ -1,0 +1,30 @@
+.services {
+  padding: 100px 80px;
+  @media (max-width: 991px) {
+    padding: 30px 15px;
+  }
+
+  &-item {
+    min-height: 144px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 40px 48px 40px 0;
+    position: relative;
+
+    @media (max-width: 991px) {
+      border-width: 2px 0;
+      border-color: rgba(255, 255, 255, 0.5);
+      padding: 18px 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &-item + &-item {
+    margin-top: 24px;
+  }
+}

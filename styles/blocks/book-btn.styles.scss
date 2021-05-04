@@ -1,0 +1,54 @@
+.btn {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: inline-block;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &-text {
+    color: #000;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.btn-book {
+  background-color: #fff;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -14px;
+    right: -14px;
+    bottom: 130%;
+    background: #1e1e1e;
+    transform: rotate(-5deg);
+    transition: all 1.2s;
+
+    @media (max-width: 767px) {
+      bottom: 145%;
+    }
+  }
+
+  &:hover {
+    .btn-text {
+      color: #fff;
+    }
+
+    &::after {
+      bottom: -30px;
+      transform: rotate(0deg);
+    }
+  }
+}

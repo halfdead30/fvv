@@ -1,0 +1,12 @@
+.header {
+  &-menu {
+    .footer-address {
+      display: none;
+      @media (max-width: 768px) {
+        position: absolute;
+        bottom: 30px;
+        display: block;
+      }
+    }
+  }
+}

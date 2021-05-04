@@ -1,0 +1,12 @@
+.header {
+  &-logo {
+    position: absolute;
+    cursor: pointer;
+    z-index: 98;
+
+    @media (max-width: 991px) {
+      left: 5%;
+      transform: translateX(-5%);
+    }
+  }
+}

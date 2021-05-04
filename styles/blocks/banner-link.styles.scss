@@ -1,0 +1,7 @@
+.banner {
+  &-social {
+    &__link + &__link {
+      margin-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  &-info {
+    margin-left: 120px;
+
+    @media (min-width: 767px) {
+      width: 395px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 60px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 40px;
+    }
+
+    &__hours {
+      color: rgba(255, 255, 255, 0.75);
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    &__phone {
+      font-weight: 600;
+      margin: 0 15px;
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

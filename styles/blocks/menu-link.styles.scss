@@ -1,0 +1,45 @@
+.header {
+  &-menu {
+    &__link {
+      @media (max-width: 991px) {
+        font-size: 24px;
+        padding: 15px 0;
+      }
+      .btn {
+        display: none;
+
+        @media (max-width: 991px) {
+          display: block;
+        }
+      }
+    }
+
+    &__link + &__link {
+      margin-left: 20px;
+
+      @media (max-width: 991px) {
+        margin: 0;
+      }
+    }
+
+    &__anchor {
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

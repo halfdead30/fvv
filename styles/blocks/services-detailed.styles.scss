@@ -1,0 +1,49 @@
+.services {
+  &-detailed {
+    float: left;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    padding-left: 118px;
+    width: calc(50% - 24px);
+
+    @media (max-width: 991px) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+
+    &__ico {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 118px;
+      text-align: center;
+
+      @media (max-width: 991px) {
+        position: static;
+        width: 54px;
+        float: left;
+      }
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      padding-bottom: 10px;
+      font-weight: 600;
+
+      @media (max-width: 991px) {
+        position: absolute;
+        top: 0;
+        left: 80px;
+      }
+    }
+
+    &__text {
+      opacity: 0.8;
+
+      @media (max-width: 991px) {
+        margin-top: 54px;
+      }
+    }
+  }
+}
