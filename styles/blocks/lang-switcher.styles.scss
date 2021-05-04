@@ -1,5 +1,6 @@
 .lang-switcher {
   margin-top: -2px;
+  margin-left: 10px;
   position: absolute;
   top: 0%;
   left: 100%;
@@ -44,9 +45,5 @@
 
   @media (min-width: 767px) {
     width: 160px;
-  }
-
-  & + .btn-lang {
-    border-top: 1px solid #eee;
   }
 }
