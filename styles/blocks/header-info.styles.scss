@@ -24,6 +24,10 @@
     &__phone {
       font-weight: 600;
 
+      @media (max-width: 767px) {
+        margin: 0 15px;
+      }
+
       &:hover {
         &::before {
           width: 100%;
